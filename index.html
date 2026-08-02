@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Easy as Pie | Recipe Megazine</title>
+    <title>Easy as Pie | Recipe Book Preview</title>
     <style>
         :root {
             --bg-color: #FAF9F5;
@@ -48,7 +48,7 @@
 
         .site-subtitle {
             color: var(--text-sub);
-            font-size: 1.1rem;
+            font-size: 1.05rem;
             margin: 0;
         }
 
@@ -248,7 +248,7 @@
         <!-- Header -->
         <header>
             <h1 class="site-title">Easy as Pie</h1>
-            <p class="site-subtitle">Simple, detailed, and fail-proof recipes for every beginner</p>
+            <p class="site-subtitle">Simple, detailed, and fail-proof healthy recipes for every beginner by Jeyun</p>
         </header>
 
         <!-- Category Filter Buttons -->
@@ -256,8 +256,10 @@
             <button class="filter-btn active" onclick="filterRecipes('all')">All</button>
             <button class="filter-btn" onclick="filterRecipes('breakfast')">Breakfast</button>
             <button class="filter-btn" onclick="filterRecipes('main')">Main Dish</button>
-            <button class="filter-btn" onclick="filterRecipes('snacks')">Snacks & Sides</button>
             <button class="filter-btn" onclick="filterRecipes('noodles')">Noodles & Pasta</button>
+            <button class="filter-btn" onclick="filterRecipes('soups')">Soups</button>
+            <button class="filter-btn" onclick="filterRecipes('snacks')">Snacks & Sides</button>
+            <button class="filter-btn" onclick="filterRecipes('desserts')">Desserts</button>
         </nav>
 
         <!-- Recipe Cards Grid -->
@@ -267,7 +269,7 @@
 
         <!-- Footer -->
         <footer>
-            <p>&copy; 2026 Jeyun. All rights reserved. Excerpt from the upcoming recipe book &lt;The Go-To Healthy Table&gt;.</p>
+            <p>&copy; 2026 Jeyun. All rights reserved. Excerpt from the upcoming recipe book &lt;Easy as Pie&gt;.</p>
         </footer>
     </div>
 
@@ -304,7 +306,7 @@
             {
                 id: 'tuna-pasta',
                 category: 'noodles',
-                badge: 'Main Dish / Pasta',
+                badge: 'Noodles & Pasta / High-Protein',
                 title: 'Tuna & Oyster Sauce Oil Pasta',
                 quote: 'Rich umami from oyster sauce meets savory tuna for a fail-proof, high-protein pasta. (Serves 2)',
                 ingredients: [
@@ -392,6 +394,135 @@
                     '<strong>Step 3 (Finish):</strong> Top with grilled abalone slices and serve immediately.'
                 ],
                 tip: '<strong>Pro Tip (Noodle Prep):</strong> Ensure the soy protein noodles are completely drained of excess water so the rich perilla oil and tsuyu flavor won\'t be diluted.'
+            },
+            {
+                id: 'spinach-doenjang',
+                category: 'soups',
+                badge: 'Soups / Comfort Food',
+                title: 'Spinach Doenjang Soup',
+                quote: 'When you crave a warm, savory broth with a subtle spicy kick.',
+                ingredients: [
+                    '<strong>Main:</strong> 1 bunch of fresh spinach, broth (beef-vegetable or anchovy-kelp recommended)',
+                    '<strong>Seasoning:</strong> 1–1.5 tbsp Doenjang (soybean paste), 1 tsp chili flakes (Gochugaru), 1/2 tbsp tuna fish sauce, 1/2 tbsp minced garlic, 1 Cheongyang chili pepper (optional)'
+                ],
+                instructions: [
+                    '<strong>Step 0 (Prep):</strong> Trim spinach stems and wash thoroughly in cold water 3–4 times to remove any grit. Drain in a colander.',
+                    '<strong>Step 1 (Broth Base):</strong> In a pot, bring your choice of broth to a high boil with soybean paste, chili flakes, and tuna fish sauce.',
+                    '<strong>Step 2 (Cook Spinach):</strong> Add the prepped spinach once the broth is boiling vigorously.',
+                    '<strong>Step 3 (Finish):</strong> Reduce to medium heat as it comes back to a boil. Simmer until spinach turns tender, then add minced garlic and sliced chili pepper for a final quick boil.'
+                ],
+                tip: '<strong>Pro Tip:</strong> Tuna fish sauce adds a deep umami boost that ties the rich soybean broth together perfectly.'
+            },
+            {
+                id: 'protein-yogurt-icecream',
+                category: 'desserts',
+                badge: 'Desserts / High-Protein',
+                title: 'Thick Protein Yogurt Ice Cream',
+                quote: 'A rich, creamy, and completely guilt-free frozen dessert.',
+                ingredients: [
+                    '<strong>Base:</strong> Thick Greek yogurt, 1 scoop protein powder (Pistachio or Chocolate flavor recommended)',
+                    '<strong>Toppings:</strong> Granola, mixed nuts'
+                ],
+                instructions: [
+                    '<strong>Step 0 (Mix):</strong> Scoop Greek yogurt into a bowl. Add 1 scoop of your favorite protein powder and mix thoroughly until lump-free.',
+                    '<strong>Step 1 (Chill):</strong> Cover the bowl with plastic wrap and freeze for about 1.5 hours.',
+                    '<strong>Step 2 (Serve):</strong> Remove from the freezer when the edges are icy and the center remains thick and creamy. Top with generous granola and nuts for extra crunch.'
+                ],
+                tip: '<strong>Pro Tip (Texture Control):</strong> Don’t leave it in the freezer for too long! 90 minutes is the sweet spot for that perfect creamy-yet-frozen gelato texture.'
+            },
+            {
+                id: 'onepan-tortilla-wrap',
+                category: 'breakfast',
+                badge: 'Breakfast / Quick Meal',
+                title: 'One-Pan Tortilla Fold-Over',
+                quote: 'Your new foolproof go-to breakfast in under 10 minutes.',
+                ingredients: [
+                    '<strong>Main:</strong> 1 tortilla sheet, 2 eggs, chicken breast ham, sliced cheese, baby leaf greens',
+                    '<strong>Dressing:</strong> Balsamic glaze or your favorite sauce'
+                ],
+                instructions: [
+                    '<strong>Step 0 (Sear):</strong> Sear chicken breast ham in a heated pan until lightly golden.',
+                    '<strong>Step 1 (Egg Base):</strong> Pour beaten eggs over the ham to cover the bottom of the pan.',
+                    '<strong>Step 2 (Attach):</strong> Before the egg sets completely, place the tortilla on top and press gently so it adheres to the egg.',
+                    '<strong>Step 3 (Flip & Build):</strong> Flip everything over so the tortilla faces down. Layer sliced cheese on the warm egg to melt, then heap with fresh baby greens.',
+                    '<strong>Step 4 (Fold):</strong> Drizzle sauce over the greens, gently fold the tortilla in half, and serve.'
+                ],
+                tip: '<strong>Pro Tip (Veggies):</strong> Any soft leafy greens from your fridge work wonderfully here!'
+            },
+            {
+                id: 'perilla-oil-pasta',
+                category: 'noodles',
+                badge: 'Noodles & Pasta / Easy Meal',
+                title: 'Perilla Leaf & Toast Oil Pasta',
+                quote: 'Super simple to make, yet unexpectedly mind-blowing in flavor.',
+                ingredients: [
+                    '<strong>Main:</strong> Pasta noodles, 5–6 fresh perilla leaves (or basil)',
+                    '<strong>Dressing:</strong> 3 tbsp toasted perilla oil, 3 tbsp soy sauce, 3 tbsp plum syrup (Maesil), 1.5 tbsp vinegar, 2 tbsp ground perilla seeds'
+                ],
+                instructions: [
+                    '<strong>Step 0 (Cook Pasta):</strong> Boil pasta noodles until al dente.',
+                    '<strong>Step 1 (Dressing):</strong> While pasta cooks, whisk all dressing ingredients together in a small bowl.',
+                    '<strong>Step 2 (Cold Rinse):</strong> Quickly rinse cooked pasta under cold running water to make the noodles springy and firm.',
+                    '<strong>Step 3 (Toss & Top):</strong> Toss cold noodles thoroughly in the dressing, then pile a generous mountain of thinly shredded perilla leaves on top.'
+                ],
+                tip: '<strong>Pro Tip:</strong> The more perilla leaves you stack on top, the better and fresher it tastes!'
+            },
+            {
+                id: 'henrique-omelette',
+                category: 'breakfast',
+                badge: 'Breakfast / Gourmet',
+                title: 'Henrique’s Gourmet Omelette',
+                quote: 'A culinary masterclass in egg flavor, passed down by foodie Henrique.',
+                ingredients: [
+                    '<strong>Egg Base:</strong> 2–3 eggs, a splash of milk, butter',
+                    '<strong>Toppings:</strong> Bacon, cheddar or mozzarella cheese, diced onion, carrot, mushrooms',
+                    '<strong>Seasoning:</strong> Salt, black pepper, mayo drizzle'
+                ],
+                instructions: [
+                    '<strong>Step 0 (Egg Prep):</strong> Whisk eggs with a splash of milk. Season with salt and pepper right before pouring into the pan.',
+                    '<strong>Step 1 (Coat):</strong> Melt butter in a pan over low heat so it doesn’t burn, then pour in the egg mixture.',
+                    '<strong>Step 2 (Layer):</strong> As the bottom sets slightly, scatter finely diced onions, carrots, and mushrooms. Top with bacon and cheese.',
+                    '<strong>Step 3 (Fold & Finish):</strong> Carefully fold the omelette in half. Cook to desired doneness and drizzle with mayonnaise before serving.'
+                ],
+                tip: '<strong>Pro Tip:</strong> Keep the heat low when melting butter to prevent it from browning and keep the eggs silky.'
+            },
+            {
+                id: 'mustard-peanut-tuna-pasta',
+                category: 'noodles',
+                badge: 'Noodles & Pasta / Umami',
+                title: 'Creamy Mustard & Peanut Butter Pasta',
+                quote: 'Mustard + Tuna Fish Sauce + Peanut Butter = An addictive umami flavor bomb.',
+                ingredients: [
+                    '<strong>Main:</strong> Pasta noodles, garlic, butter, 100ml milk, 150ml pasta water',
+                    '<strong>Sauce:</strong> 2 tbsp peanut butter, 1.5–2 tbsp tuna fish sauce, 1 tbsp Dijon mustard',
+                    '<strong>Optional:</strong> Paprika powder, olive oil, parsley'
+                ],
+                instructions: [
+                    '<strong>Step 0 (Prep Noodles):</strong> Boil pasta 2 minutes less than package instructions. Toss with olive oil to prevent sticking.',
+                    '<strong>Step 1 (Base):</strong> Melt butter in a pan and saute garlic until fragrant. Add milk and pasta water, bringing to a simmer.',
+                    '<strong>Step 2 (Flavor):</strong> Stir in mustard and tuna fish sauce to build a rich savory base.',
+                    '<strong>Step 3 (Combine):</strong> Add noodles to the simmering sauce. Stir in peanut butter over low heat until melted into a silky, glossy cream.',
+                    '<strong>Step 4 (Finish):</strong> Plate up with a pinch of black pepper, parsley, and a final drizzle of olive oil.'
+                ],
+                tip: '<strong>Pro Tip (Smooth Sauce):</strong> Whisk cold peanut butter with a splash of hot pasta water in a cup beforehand so it dissolves effortlessly into the sauce.'
+            },
+            {
+                id: 'sweet-potato-corn-pizza',
+                category: 'main',
+                badge: 'Main Dish / Pizza',
+                title: 'Sweet Potato & Sweetcorn Tortilla Pizza',
+                quote: 'That mouthwatering, sweet and nutty aroma filling your kitchen.',
+                ingredients: [
+                    '<strong>Base:</strong> 1 tortilla, butter, 2 sweet potatoes',
+                    '<strong>Toppings:</strong> Sweetcorn, black olives, mozzarella cheese, mayonnaise, milk, honey or liquid syrup'
+                ],
+                instructions: [
+                    '<strong>Step 0 (Mousse Prep):</strong> Boil 1.5 sweet potatoes until very soft. Mash with 2 tbsp mayo and a splash of milk to make a smooth mousse. Cut remaining 0.5 sweet potato into small cubes.',
+                    '<strong>Step 1 (Sheet Base):</strong> Lightly butter foil on an oven tray, then lay down the tortilla.',
+                    '<strong>Step 2 (Layering):</strong> Layer 1st Cheese -> Thick Sweet Potato Mousse -> Drizzle of Honey/Syrup.',
+                    '<strong>Step 3 (Toppings & Bake):</strong> Scatter sweetcorn, olives, cubed sweet potatoes, and a 2nd layer of cheese on top to bind. Bake in a preheated oven for 10 mins until cheese melts.'
+                ],
+                tip: '<strong>Pro Tip (Butter Trick):</strong> Buttering the foil prevents sticking and gives the bottom of the tortilla a popcorn-like nutty aroma!'
             }
         ];
 
