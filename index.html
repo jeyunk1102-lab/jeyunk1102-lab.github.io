@@ -5,15 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Go-To Healthy Table | Recipe Book Preview</title>
     <style>
-        /* Modern & Clean Editorial Style */
         :root {
-            --bg-color: #FAF9F6;
+            --bg-color: #FAF9F5;
             --card-bg: #FFFFFF;
-            --text-main: #2C3E50;
-            --text-sub: #666666;
+            --text-main: #2B2D42;
+            --text-sub: #5C677D;
             --accent-color: #2E7D32;
             --badge-bg: #E8F5E9;
-            --border-color: #EEEEEE;
+            --border-color: #EAEAEA;
+            --tip-bg: #FFF9E6;
+            --tip-border: #FFB703;
         }
 
         body {
@@ -21,52 +22,52 @@
             background-color: var(--bg-color);
             color: var(--text-main);
             margin: 0;
-            padding: 40px 20px;
-            line-height: 1.6;
+            padding: 50px 20px;
+            line-height: 1.65;
         }
 
         .container {
-            max-width: 720px;
+            max-width: 760px;
             margin: 0 auto;
         }
 
-        /* Header Section */
+        /* Header */
         header {
             text-align: center;
-            margin-bottom: 50px;
+            margin-bottom: 60px;
             padding-bottom: 30px;
-            border-bottom: 1px solid var(--border-color);
+            border-bottom: 2px solid #E5E5E5;
         }
 
-        h1.site-title {
-            font-size: 2.2rem;
+        .site-title {
+            font-size: 2.4rem;
             font-weight: 700;
-            margin-bottom: 8px;
+            margin: 0 0 10px 0;
             letter-spacing: -0.5px;
         }
 
-        p.site-subtitle {
+        .site-subtitle {
             color: var(--text-sub);
-            font-size: 1.05rem;
+            font-size: 1.1rem;
             margin: 0;
         }
 
-        /* Recipe Card Section */
+        /* Recipe Card */
         .recipe-card {
             background: var(--card-bg);
             border: 1px solid var(--border-color);
             border-radius: 16px;
-            padding: 32px;
-            margin-bottom: 40px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+            padding: 36px;
+            margin-bottom: 45px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
         }
 
         .badge {
             display: inline-block;
             background-color: var(--badge-bg);
             color: var(--accent-color);
-            font-size: 0.85rem;
-            font-weight: 600;
+            font-size: 0.8rem;
+            font-weight: 700;
             padding: 4px 12px;
             border-radius: 20px;
             margin-bottom: 12px;
@@ -75,46 +76,27 @@
         }
 
         .recipe-title {
-            font-size: 1.6rem;
-            margin: 0 0 8px 0;
+            font-size: 1.7rem;
+            margin: 0 0 10px 0;
+            letter-spacing: -0.3px;
         }
 
         .recipe-quote {
             color: var(--text-sub);
-            font-style: normal;
+            font-size: 1.02rem;
             margin-bottom: 24px;
-            font-size: 0.98rem;
+            padding-bottom: 16px;
+            border-bottom: 1px dashed var(--border-color);
         }
 
-        .recipe-image {
-            width: 100%;
-            border-radius: 12px;
-            object-fit: cover;
-            margin-bottom: 24px;
-        }
-
-        /* Recipe Details Grid */
-        .meta-info {
-            display: flex;
-            gap: 20px;
-            background: #F8F9FA;
-            padding: 12px 20px;
-            border-radius: 8px;
-            font-size: 0.9rem;
-            margin-bottom: 24px;
-            color: var(--text-sub);
-        }
-
-        .meta-item strong {
-            color: var(--text-main);
-        }
-
+        /* Section Subtitles */
         h3.section-subtitle {
             font-size: 1.15rem;
+            font-weight: 700;
             border-bottom: 2px solid var(--text-main);
             padding-bottom: 6px;
-            margin-top: 28px;
-            margin-bottom: 12px;
+            margin-top: 32px;
+            margin-bottom: 14px;
         }
 
         ul, ol {
@@ -123,23 +105,23 @@
         }
 
         li {
-            margin-bottom: 8px;
+            margin-bottom: 10px;
         }
 
         .pro-tip {
-            background-color: #FFF9E6;
-            border-left: 4px solid #FFC107;
-            padding: 16px;
+            background-color: var(--tip-bg);
+            border-left: 4px solid var(--tip-border);
+            padding: 16px 20px;
             border-radius: 0 8px 8px 0;
             font-size: 0.95rem;
-            margin-top: 24px;
+            margin-top: 28px;
         }
 
         footer {
             text-align: center;
             color: var(--text-sub);
-            font-size: 0.85rem;
-            margin-top: 60px;
+            font-size: 0.9rem;
+            margin-top: 80px;
         }
     </style>
 </head>
@@ -152,24 +134,40 @@
             <p class="site-subtitle">A gourmet protein & wellness recipe book preview by Jeyun</p>
         </header>
 
-        <!-- Recipe Article 1 -->
+        <!-- Recipe 1 -->
         <article class="recipe-card">
-            <span class="badge">High-Protein</span>
-            <h2 class="recipe-title">Tuna & Oyster Sauce Oil Pasta</h2>
-            <div class="recipe-quote">"Rich umami from oyster sauce meets savory tuna for a fail-proof, high-protein pasta."</div>
-
-            <img src="tuna-pasta.jpg" alt="Tuna Pasta" class="recipe-image">
-
-            <div class="meta-info">
-                <div class="meta-item"><strong>Prep:</strong> 10 mins</div>
-                <div class="meta-item"><strong>Cook:</strong> 10 mins</div>
-                <div class="meta-item"><strong>Serves:</strong> 2</div>
-            </div>
+            <span class="badge">High-Protein / Flour-Free</span>
+            <h2 class="recipe-title">1. Real Oat Protein Pancakes</h2>
+            <div class="recipe-quote">"No flour needed! Naturally sweet, nutty, and flour-free healthy pancakes."</div>
 
             <h3 class="section-subtitle">Ingredients</h3>
             <ul>
-                <li><strong>Main:</strong> Pasta noodles, 1 small can of tuna</li>
-                <li><strong>Topping:</strong> Broccoli, 2 eggs</li>
+                <li><strong>Base:</strong> Whole rolled oats, 1 ripe banana</li>
+                <li><strong>Protein:</strong> 1–2 eggs, 1–2 tbsp chocolate protein powder</li>
+                <li><strong>Mix:</strong> Water (for adjusting consistency)</li>
+            </ul>
+
+            <h3 class="section-subtitle">Instructions</h3>
+            <ol>
+                <li><strong>Step 0 (Prep):</strong> Add ~1/2 cup of rolled oats to a blender. Blend for 15–20 seconds until finely ground into oat flour. Measure out 4 tbsp for use.</li>
+                <li><strong>Step 1 (Batter):</strong> Mash the banana in a bowl. Add 4 tbsp oat flour, 1–2 tbsp protein powder, and eggs. Mix well, adding water a spoon at a time until thick and scooping.</li>
+                <li><strong>Step 2 (Cook):</strong> Lightly coat a pan with oil and wipe excess with a paper towel. Cook over low heat and flip when bubbles pop on the surface.</li>
+            </ol>
+
+            <div class="pro-tip">
+                <strong>Pro Tip (Oat Flour):</strong> Shake the blender occasionally while grinding to prevent machine heat from clumping the oats.
+            </div>
+        </article>
+
+        <!-- Recipe 2 -->
+        <article class="recipe-card">
+            <span class="badge">High-Protein / Pasta</span>
+            <h2 class="recipe-title">2. Tuna & Oyster Sauce Oil Pasta</h2>
+            <div class="recipe-quote">"Rich umami from oyster sauce meets savory tuna for a fail-proof, high-protein pasta." (Serves 2)</div>
+
+            <h3 class="section-subtitle">Ingredients</h3>
+            <ul>
+                <li><strong>Main:</strong> Pasta noodles, 1 small can of tuna, broccoli, 2 eggs</li>
                 <li><strong>Sauce:</strong> Olive oil (generous amount), oyster sauce, lemon juice, salt, black pepper</li>
             </ul>
 
@@ -178,11 +176,113 @@
                 <li><strong>Step 0 (Prep):</strong> Boil pasta noodles until al dente. Lightly blanch broccoli pieces in boiling water.</li>
                 <li><strong>Step 1 (Toss):</strong> Transfer cooked pasta to a pan, drizzle generously with olive oil, and toss over medium heat.</li>
                 <li><strong>Step 2 (Saute):</strong> Add blanched broccoli and oyster sauce (about two coin-sized squirts). Toss drained tuna with lemon juice and black pepper, then saute together briefly.</li>
-                <li><strong>Step 3 (Finish):</strong> Slice soft-boiled eggs in half and set them on top so the golden yolk flows over the pasta. Season with salt if needed.</li>
+                <li><strong>Step 3 (Finish):</strong> Slice soft-boiled eggs in half and set them on top so the yolk flows over the pasta. Season with salt if needed.</li>
             </ol>
 
             <div class="pro-tip">
-                <strong>Pro Tip:</strong> A splash of fresh lemon juice removes any fishiness from the canned tuna and brightens the whole dish.
+                <strong>Pro Tip (Flavor Secret):</strong> A splash of fresh lemon juice removes any fishiness from the canned tuna and brightens the whole dish.
+            </div>
+        </article>
+
+        <!-- Recipe 3 -->
+        <article class="recipe-card">
+            <span class="badge">Light Meal / Bruschetta</span>
+            <h2 class="recipe-title">3. Garlic Tomato Bruschetta</h2>
+            <div class="recipe-quote">"Bursting with fresh garlic aroma and bright tomato flavor for a light, healthy meal." (Serves 4)</div>
+
+            <h3 class="section-subtitle">Ingredients</h3>
+            <ul>
+                <li><strong>Base:</strong> 4 baguette slices, 1–2 fresh garlic cloves</li>
+                <li><strong>Topping:</strong> 1 fresh tomato, olive oil, salt</li>
+                <li><strong>Options:</strong> Avocado or smoked salmon, red wine vinegar, black pepper, dried oregano</li>
+            </ul>
+
+            <h3 class="section-subtitle">Instructions</h3>
+            <ol>
+                <li><strong>Step 0 (Prep):</strong> Grate the tomato to extract its fresh juice, then whisk with olive oil, salt, and a splash of red wine vinegar.</li>
+                <li><strong>Step 1 (Toast):</strong> Drizzle baguette slices with olive oil and toast on a pan until golden and crispy.</li>
+                <li><strong>Step 2 (Infuse):</strong> Gently rub a raw garlic clove directly over the warm, toasted bread surface to infuse the garlic aroma.</li>
+                <li><strong>Step 3 (Assemble):</strong> Spoon the tomato mixture over the bread, top with avocado or smoked salmon, and sprinkle with pepper and oregano.</li>
+            </ol>
+
+            <div class="pro-tip">
+                <strong>Pro Tip (Garlic Control):</strong> The raw garlic rubs off very strongly on the first slice, so use gentle pressure when coating.
+            </div>
+        </article>
+
+        <!-- Recipe 4 -->
+        <article class="recipe-card">
+            <span class="badge">Gratin / Comfort Food</span>
+            <h2 class="recipe-title">4. Tomato Basil Dumpling Gratin</h2>
+            <div class="recipe-quote">"A fancy upgrade for frozen dumplings! Super easy gratin rivaling classic lasagna."</div>
+
+            <h3 class="section-subtitle">Ingredients</h3>
+            <ul>
+                <li><strong>Main:</strong> Frozen dumplings (6–8 pcs), shrimp (5–6 pcs), tomato pasta sauce</li>
+                <li><strong>Flavor:</strong> Basil pesto, shredded cheese (mozzarella/cheddar), minced garlic</li>
+            </ul>
+
+            <h3 class="section-subtitle">Instructions</h3>
+            <ol>
+                <li><strong>Step 0 (Prep):</strong> Pan-fry dumplings until golden. In the same pan, saute minced garlic and shrimp until fragrant.</li>
+                <li><strong>Step 1 (Sauce):</strong> Pour tomato sauce into the pan and let it simmer. Toss in the dumplings to coat them evenly.</li>
+                <li><strong>Step 2 (Build):</strong> Layer dumplings and sauce in a baking dish, tucking cheese into all the gaps. Place shrimp on the very top.</li>
+                <li><strong>Step 3 (Bake):</strong> Air-fry or bake at 180–200°C (350–390°F) for 5–10 minutes until the cheese is melted and bubbling.</li>
+            </ol>
+
+            <div class="pro-tip">
+                <strong>Pro Tip (Meat Sauce Hack):</strong> Mash 1–2 dumplings into the tomato sauce to create a rich, bolognese-like texture! Always dot basil pesto on after baking to preserve its vibrant green color.
+            </div>
+        </article>
+
+        <!-- Recipe 5 -->
+        <article class="recipe-card">
+            <span class="badge">Sandwich / High-Protein</span>
+            <h2 class="recipe-title">5. Carrot Râpées & Egg Sandwich</h2>
+            <div class="recipe-quote">"Crispy, creamy, and colorful—the ultimate aesthetic high-protein sandwich."</div>
+
+            <h3 class="section-subtitle">Ingredients</h3>
+            <ul>
+                <li><strong>Main:</strong> 2 carrots, bread slices, 2 eggs, perilla leaves (or basil), cream cheese</li>
+                <li><strong>Râpées Dressing:</strong> 2 tbsp olive oil, 1.5 tbsp vinegar, 1 tbsp mustard, 2 tbsp sugar, 1 pinch salt, milk (optional)</li>
+            </ul>
+
+            <h3 class="section-subtitle">Instructions</h3>
+            <ol>
+                <li><strong>Step 0 (Prep):</strong> Finely shred carrots and toss with a pinch of salt. Whisk dressing ingredients, toss with carrots, and chill in the fridge.</li>
+                <li><strong>Step 1 (Eggs):</strong> Whisk eggs with a splash of milk and salt. Softly scramble over low heat and shape into the size of your bread slice.</li>
+                <li><strong>Step 2 (Spread):</strong> Toast bread slices and spread a generous layer of cream cheese. Place aromatic perilla leaves on top.</li>
+                <li><strong>Step 3 (Layer):</strong> Heap the chilled carrot râpées and warm egg patty onto the bread, close the sandwich, and slice in half.</li>
+            </ol>
+
+            <div class="pro-tip">
+                <strong>Pro Tip (Egg Alternative):</strong> Mashed soft-boiled eggs mixed with a touch of mayo also work wonderfully as a creamy filler instead of scrambled eggs.
+            </div>
+        </article>
+
+        <!-- Recipe 6 -->
+        <article class="recipe-card">
+            <span class="badge">Gourmet / Low-Carb</span>
+            <h2 class="recipe-title">6. Abalone & Perilla Oil Soy Noodle Soba</h2>
+            <div class="recipe-quote">"Light, refreshing, and high in protein—a gourmet meal with abalone and rich perilla oil."</div>
+
+            <h3 class="section-subtitle">Ingredients</h3>
+            <ul>
+                <li><strong>Main:</strong> 1 pack soy protein noodles, fresh abalone</li>
+                <li><strong>Veggies:</strong> Zucchini, green onions</li>
+                <li><strong>Sauce:</strong> 2 tbsp Japanese Tsuyu, 1 tbsp toasted perilla oil</li>
+            </ul>
+
+            <h3 class="section-subtitle">Instructions</h3>
+            <ol>
+                <li><strong>Step 0 (Prep):</strong> Rinse soy protein noodles thoroughly in cold water and drain well in a colander. Julienne zucchini and chop green onions.</li>
+                <li><strong>Step 1 (Saute):</strong> Lightly saute zucchini to bring out its natural sweetness. Briefly stir-fry green onions. Pan-sear abalone until golden and slice.</li>
+                <li><strong>Step 2 (Mix):</strong> Place noodles in a bowl, drizzle with 2 tbsp Tsuyu and 1 tbsp perilla oil, and toss with sauteed veggies.</li>
+                <li><strong>Step 3 (Finish):</strong> Top with grilled abalone slices and serve immediately.</li>
+            </ol>
+
+            <div class="pro-tip">
+                <strong>Pro Tip (Noodle Prep):</strong> Ensure the soy protein noodles are completely drained of excess water so the rich perilla oil and tsuyu flavor won't be diluted.
             </div>
         </article>
 
